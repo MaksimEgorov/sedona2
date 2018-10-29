@@ -352,6 +352,7 @@ a {
     font-size: 21px;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .intrested__order--btn button:hover,
