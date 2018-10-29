@@ -357,9 +357,9 @@ a {
 
 .intrested__order--btn button:hover,
 .intrested__order--btn button:focus {
-    color: rgba(0, 0, 0, 0.5);
-    transition: all 1s;
-    border: solid rgba(0, 0, 0, 0.5) 1px;
+    background-color: #6f9cbe;
+    transition: all 0.5s;
+
 }
 
 
@@ -401,21 +401,27 @@ a {
 }
 
 .footer__social--twitter {
-    background-image: url(../img/t.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #81b3d2;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .footer__social--facebook {
-    background-image: url(../img/fb-icon.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #81b3d2;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .footer__social--YouTube {
-    background-image: url(../img/youtube.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #81b3d2;
     background-repeat: no-repeat;
     background-position: center;
@@ -433,4 +439,16 @@ a {
     width: 115px;
     height: 41px;
     background-image: url(../img/logo_name.png)
+}
+
+.footer__social:hover,
+.footer__social:focus {
+    background-color: #6f9cbe;
+    transition: all 0.5s;
+}
+
+.footer__social:hover path,
+.footer__social:focus path {
+    fill: #b8b7ba;
+    transition: all 0.5s;
 }
