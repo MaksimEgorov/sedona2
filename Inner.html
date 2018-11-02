@@ -17,6 +17,7 @@
                     <li class="inner-header__item">
                         <a href="info.html">Информация</a>
                     </li>
+
                     <li class="inner-header__item">
                         <a href="photos.html">Фото и видео</a>
                     </li>
@@ -38,7 +39,34 @@
         </header>
         <section class="inner__filter">
             <div class="inner__filter__wrapper">
+                <ul class="filter__list">
+                    <li class="filter__list__item filter__list__item--main1">Инфраструктура:</li>
+                    <li class="filter__list__item filter__list__item--main2">Тип жилья:</li>
+                    <li class="filter__list__item filter__list__item--checked">Бассейн</li>
+                    <li class="filter__list__item filter__list__item--checked">Гостиница</li>
+                    <li class="filter__list__item filter__list__item--not_checked">Парковка</li>
+                    <li class="filter__list__item filter__list__item--checked">Мотель</li>
+                    <li class="filter__list__item filter__list__item--not_checked">Wi-Fi</li>
+                    <li class="filter__list__item filter__list__item--checked">Апартаменты</li>
+                </ul>
+            </div>
+            <div class="inner__filter__range__wrapper">
+                <div class="inner__filter__range">
+                    <div class="filter__range__title">Стоимость в сутки (р):</div>
+                    <div class="filter__range__price_controls">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                    </div>
+                    <div class="filter__range__range_controls">
+                        <div class="range_controls__scale">
+                            <div class="range_controls__bar"></div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+                        </div>
 
+                    </div>
+                    <button class="btn-transparente" type="submit">Показать</button>
+                </div>
             </div>
         </section>
 
