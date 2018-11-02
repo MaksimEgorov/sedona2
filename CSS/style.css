@@ -708,3 +708,51 @@ a {
     color: #000;
     background: #fff;
 }
+
+.founded-sort {
+    width: auto;
+    min-height: 86px;
+}
+
+.founded-sort__list {
+    min-width: 528px;
+    height: auto;
+}
+
+.sort__list__items {
+    display: flex;
+    align-items: center;
+    justify-content: row;
+    min-height: 86px;
+    min-width: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sort__list__items .list__item {
+    margin-right: 40px;
+    text-decoration: underline dotted skyblue;
+    cursor: pointer;
+}
+
+.sort__list__items .list__item:hover {
+    color: skyblue;
+}
+
+.sort__list__items .list__item:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.list__item--founded {
+    font-weight: 600;
+    font-size: 21px;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.list__item--sort {
+    font-family: inherit;
+    margin-right: 40px;
+}
