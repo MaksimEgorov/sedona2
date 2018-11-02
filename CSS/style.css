@@ -528,7 +528,178 @@ a {
 }
 
 .inner__filter {
+    display: flex;
+    justify-content: space-between;
     width: 1200px;
     min-height: 212px;
     background-image: url(../img_inner/Inner%20Background%20Img.png);
+}
+
+.filter__list__item {
+    display: inline-flex;
+    width: 200px;
+    height: 45px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    align-items: center;
+}
+
+.filter__list__item--main1 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.filter__list__item--main2 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.inner__filter__wrapper {
+    position: relative;
+    width: 528px;
+    height: 100%;
+}
+
+.filter__list {
+    margin: 0;
+    padding: 0;
+}
+
+.filter__list__item--not_checked::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url(../svg-sedona/svg-sedona/checkbox-off.svg);
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+.filter__list__item--checked::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url(../svg-sedona/svg-sedona/checkbox-on.svg);
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+/*-------------------------------------------*/
+
+
+.inner__filter__range__wrapper {
+    position: relative;
+    margin-top: 24px;
+    width: 380px;
+    height: 100%;
+    color: #fff;
+    font-family: inherit;
+}
+
+.filter__range__title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.filter__range__price_controls {
+    position: relative;
+    border: 2px solid white;
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.filter__range__price_controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+    padding-left: 65px;
+}
+
+.filter__range__price_controls input {
+    width: 85px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+.filter__range__price_controls::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.filter__range__range_controls {
+    width: 354px;
+    position: relative;
+    margin-bottom: 32px;
+    margin-top: 25px;
+}
+
+.range_controls__scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.filter__range__range_controls .range_controls__bar {
+    width: 80%;
+    height: 2px;
+    background: #fff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparente {
+    display: flex;
+    margin: 0 28%;
+    padding: 6px 35px;
+
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
