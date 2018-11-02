@@ -703,3 +703,8 @@ a {
     border-radius: 2px;
     cursor: pointer;
 }
+
+.btn-transparente:hover {
+    color: #000;
+    background: #fff;
+}
