@@ -15,7 +15,7 @@ a {
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    width: 1200px;
     box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -837,7 +837,7 @@ hr {
     margin-top: 0;
     padding: 0;
     display: flex;
-    width: 210px;
+    width: 280px;
     height: 17px;
 
 }
@@ -887,15 +887,30 @@ hr {
 
 .hotels-list__raiting {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
     width: 120px;
     height: 154px;
 
 }
 
 .hotels-list__raiting--wrapper {
+    margin-left: auto;
     display: flex;
-    width: 400px;
+    width: 154px;
     height: 154px;
-    align-self: flex-end;
-    background-color: aquamarine;
+
+}
+
+
+
+.hotels-list__raiting--points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 27px;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
 }
