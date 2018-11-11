@@ -158,6 +158,39 @@
                 <a class="footer__developer" href="https://htmlacademy.ru/" target="_blank"><span class="visually-hidden">HTML Academy</span></a>
             </div>
         </footer>
+        <div class="modal modal-search">
+            <div class="modal-close"></div>
+            <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="get">
+                <div class="modal-search__arrive">
+                    <label for="Дата заезда" class="modal-search__arrive--date">Дата заезда:</label>
+                    <input type="text" name="Дата заезда" id="Дата заезда" value="24 апреля 2017" height="38px" width="346px">
+                </div>
+
+
+                <div class="modal-search__leave">
+                    <label for="Дата выезда" class="modal-search__leave-date">Дата выезда:</label>
+
+                    <input type="text" name="Дата выезда" id="Дата выезда" value="4 июля 2017" height="38px" width="346px">
+                </div>
+
+
+                <div class="modal-search__adults">
+                    <label for="Взрослые" class="modal-search__adults__qty">Взрослые:</label>
+                    <button class="adults__qty--plus"></button>
+                    <input type="text" name="Взрослые" id="Взрослые" value="2">
+                    <button class="adults__qty--minus"></button>
+
+                    <label for="Дети" class="modal-search__kids__qty">Дети:</label>
+                    <button class="kids__qty--plus"></button>
+                    <input type="text" name="Дети" id="Дети" value="0">
+                    <button class="kids__qty--minus"></button>
+                </div>
+
+                <br>
+
+                <input class="modal-search__search-btn" type="submit" value="Найти">
+            </form>
+        </div>
     </div>
 </body>
 
