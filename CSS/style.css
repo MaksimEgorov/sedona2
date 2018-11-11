@@ -914,3 +914,232 @@ hr {
     background-color: #f2f2f2;
     margin-bottom: 5px;
 }
+
+.modal {
+    position: fixed;
+    color: #000000;
+
+    background-color: #efefef;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+}
+
+.modal-search {
+    display: flex;
+    /*    display: none;*/
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    width: 568px;
+    height: 395px;
+    /*    padding: 50px 80px;*/
+    margin-left: -285px;
+    margin-top: -300px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    left: 2px;
+    width: 25px;
+    height: 3px;
+    background-color: #d0d0d0;
+
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-search__form {
+    position: relative;
+    display: inline-block;
+    width: 568px;
+    height: 285px;
+}
+
+.modal-search__arrive input {
+    margin: 0;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+    padding: 13px;
+    width: 328px;
+    margin-bottom: 30px;
+    font-family: "PT Sans";
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.modal-search__arrive--date {
+    margin: 0;
+    width: 100px;
+    height: 38px;
+    font-family: "PT Sans";
+    font-weight: 600;
+    margin-right: 30px;
+    margin-left: 44px;
+    font-size: 16px;
+}
+
+.modal-search__leave-date {
+    margin: 0;
+    width: 110px;
+    height: 38px;
+    font-family: "PT Sans";
+    font-weight: 600;
+    margin-right: 30px;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.modal-search__leave input {
+    margin: 0;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+    padding: 13px;
+    width: 328px;
+    margin-bottom: 30px;
+    font-family: "PT Sans";
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.modal-search__adults {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 38px;
+    font-family: "PT Sans";
+    font-weight: 600;
+    margin-right: 30px;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.modal-search__adults input {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 30px;
+    font-family: "PT Sans";
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.adults__qty--plus,
+.kids__qty--plus {
+    display: flex;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: none;
+}
+
+
+
+.modal-search__adults__qty,
+.modal-search__kids__qty {
+    display: flex;
+    margin-right: 56px;
+    justify-content: center;
+    align-items: center;
+}
+
+.kids__qty--minus,
+.adults__qty--minus {
+    display: flex;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    background-color: white;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 2px;
+}
+
+.kids__qty--minus::before,
+.kids__qty--minus::after,
+.adults__qty--plus::before,
+.adults__qty--plus::after {
+    content: "";
+
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    width: 12px;
+    height: 2px;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.kids__qty--plus::before,
+.kids__qty--plus::after,
+.adults__qty--minus::before,
+.adults__qty--minus::after {
+    content: "";
+
+    position: absolute;
+    top: 18px;
+    left: 12px;
+    width: 12px;
+    height: 2px;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.kids__qty--minus::before,
+.adults__qty--minus::before {
+    transform: rotate(90deg);
+}
+
+.modal-search__kids__qty {
+    margin-right: 26px;
+    margin-left: 56px;
+}
+
+.modal-search__search-btn {
+    margin-left: 55px;
+    margin-bottom: 55px;
+    width: 458px;
+    height: 58px;
+    background-color: #81b3d2;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    border-style: none;
+    text-transform: uppercase;
+}
