@@ -561,6 +561,7 @@ a {
     position: relative;
     width: 528px;
     height: 100%;
+    margin-left: 55px;
 }
 
 .filter__list {
@@ -592,6 +593,7 @@ a {
 .inner__filter__range__wrapper {
     position: relative;
     margin-top: 24px;
+    margin-right: 45px;
     width: 380px;
     height: 100%;
     color: #fff;
@@ -714,6 +716,7 @@ a {
 .founded-sort__list {
     width: 800px;
     height: auto;
+    margin-left: 45px;
 }
 
 .sort__list__items {
@@ -1143,3 +1146,5 @@ hr {
     border-style: none;
     text-transform: uppercase;
 }
+
+.inner__filter__range {}
