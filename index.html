@@ -7,6 +7,7 @@
     <link href="CSS/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="CSS/normalize.css" rel="stylesheet">
+    <script src="./Script.js" defer></script>
 </head>
 
 <body>
@@ -175,15 +176,15 @@
 
 
                 <div class="modal-search__adults">
-                    <label for="Взрослые" class="modal-search__adults__qty">Взрослые:</label>
-                    <button class="adults__qty--plus"></button>
-                    <input type="text" name="Взрослые" id="Взрослые" value="2">
-                    <button class="adults__qty--minus"></button>
+                    <label for="adults" class="modal-search__adults__qty">Взрослые:</label>
+                    <button type="button" class="adults__qty--plus"></button>
+                    <input type="text" name="Взрослые" id="adults" value="2">
+                    <button type="button" class="adults__qty--minus" onclick="minus_qty()"></button>
 
-                    <label for="Дети" class="modal-search__kids__qty">Дети:</label>
-                    <button class="kids__qty--plus"></button>
-                    <input type="text" name="Дети" id="Дети" value="0">
-                    <button class="kids__qty--minus"></button>
+                    <label for="kids" class="modal-search__kids__qty">Дети:</label>
+                    <button type="button" class="kids__qty--plus"></button>
+                    <input type="text" name="Дети" id="kids" value="0">
+                    <button type="button" class="kids__qty--minus"></button>
                 </div>
 
                 <br>
