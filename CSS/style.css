@@ -929,7 +929,7 @@ hr {
 
 .modal-search {
     display: flex;
-    /*    display: none;*/
+    display: none;
     justify-content: center;
     align-items: center;
     top: 50%;
