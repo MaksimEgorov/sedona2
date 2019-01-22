@@ -25,8 +25,6 @@ function minus() {
     var current = document.getElementById('kids').value;
     if (current > 0) {
         current--
-    } else {
-        return
     };
 
     document.getElementById('kids').value = current;
