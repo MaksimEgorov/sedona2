@@ -125,7 +125,7 @@
                 <p class="interested__order--p">Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
             </div>
             <div class="intrested__order--btn">
-                <button class="intrested__order--src_btn" type="button">Поиск гостиницы в Седоне</button>
+                <button class="intrested__order--src_btn" type="button" onclick='openModalSearch()'>Поиск гостиницы в Седоне</button>
             </div>
         </section>
         <section class="map">
@@ -159,8 +159,10 @@
                 <a class="footer__developer" href="https://htmlacademy.ru/" target="_blank"><span class="visually-hidden">HTML Academy</span></a>
             </div>
         </footer>
-        <div class="modal modal-search">
-            <div class="modal-close"></div>
+
+        <!---------------------------MODAL WINDOW----------------------------------------->
+        <div class="modal modal-search hidden">
+            <div class="modal-close" onclick='closeModalSearch()'></div>
             <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="get">
                 <div class="modal-search__arrive">
                     <label for="Дата заезда" class="modal-search__arrive--date">Дата заезда:</label>
@@ -177,14 +179,14 @@
 
                 <div class="modal-search__adults">
                     <label for="adults" class="modal-search__adults__qty">Взрослые:</label>
-                    <button type="button" class="adults__qty--plus"></button>
-                    <input type="text" name="Взрослые" id="adults" value="2">
-                    <button type="button" class="adults__qty--minus" onclick="minus_qty()"></button>
+                    <button type="button" class="adults__qty--plus" onclick='minusAdults()'></button>
+                    <input type="text" name="Взрослые" id="adults" value="" placeholder="0">
+                    <button type="button" class="adults__qty--minus" onclick='plusAdults()'></button>
 
                     <label for="kids" class="modal-search__kids__qty">Дети:</label>
-                    <button type="button" class="kids__qty--plus"></button>
-                    <input type="text" name="Дети" id="kids" value="0">
-                    <button type="button" class="kids__qty--minus"></button>
+                    <button type="button" class="kids__qty--plus" onclick='minus()'></button>
+                    <input type="text" name="Дети" id="kids" value="" placeholder="0">
+                    <button type="button" class="kids__qty--minus" onclick='plus()'></button>
                 </div>
 
                 <br>
