@@ -32,10 +32,12 @@ function minus() {
 
 function openModalSearch() {
     document.querySelector('.modal').classList.remove('hidden');
+    document.querySelector('.modal-overlay').classList.remove('hidden');
 }
 
 var closeSearch = document.querySelector('.modal-close');
 var modalSearch = document.querySelector('.modal');
 closeSearch.addEventListener('click', function () {
     modalSearch.classList.add('hidden');
+    document.querySelector('.modal-overlay').classList.add('hidden');
 })
