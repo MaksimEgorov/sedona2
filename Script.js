@@ -41,3 +41,8 @@ closeSearch.addEventListener('click', function () {
     modalSearch.classList.add('hidden');
     document.querySelector('.modal-overlay').classList.add('hidden');
 })
+
+function modalCloser() {
+    document.querySelector('.modal').classList.add('hidden');
+    document.querySelector('.modal-overlay').classList.add('hidden');
+}
