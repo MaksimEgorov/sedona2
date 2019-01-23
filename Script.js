@@ -30,11 +30,13 @@ function minus() {
     document.getElementById('kids').value = current;
 }
 
+//opening modal window on button "search" click
 function openModalSearch() {
     document.querySelector('.modal').classList.remove('hidden');
     document.querySelector('.modal-overlay').classList.remove('hidden');
 }
 
+//closing modal window on cross click
 var closeSearch = document.querySelector('.modal-close');
 var modalSearch = document.querySelector('.modal');
 closeSearch.addEventListener('click', function () {
@@ -42,6 +44,7 @@ closeSearch.addEventListener('click', function () {
     document.querySelector('.modal-overlay').classList.add('hidden');
 })
 
+//closing modal on click on overlay
 function modalCloser() {
     document.querySelector('.modal').classList.add('hidden');
     document.querySelector('.modal-overlay').classList.add('hidden');
